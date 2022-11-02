@@ -102,3 +102,7 @@ button {
 button span {
     color: var(--value-color);
 }
+#reset {
+    width: 200px;
+    background-color: var(--value-color);
+}

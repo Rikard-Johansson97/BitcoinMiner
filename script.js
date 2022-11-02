@@ -26,6 +26,7 @@ const resetBtn = document.getElementById("reset");
 resetBtn.addEventListener("click", function () {
     console.log(walletValue);
     walletValue = 0;
+    displayWallet.innerHTML = walletValue;
     life = 5;
     pickAxe.style.opacity = "1";
     foundBitcoins = 0;
@@ -46,7 +47,7 @@ const displayValue = async () => {
     const data = await response.json();
     const dollarString = data.bpi.USD.rate;
     dollar = Number(dollarString.replace(/[^0-9.-]+/g, ""));
-    dollar = dollar.toFixed(3);
+    dollar = dollar.toFixed(0);
     displayDollar.forEach((item) => {
         item.innerHTML = dollar;
     });

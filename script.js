@@ -3,7 +3,7 @@ const displayDollar = document.querySelectorAll(".dollar");
 // PICK AXE
 const pickAxe = document.querySelector(".pickaxe-img");
 const buyNewPickaxe = document.querySelector(".buy-new-pickaxe");
-let life = 3;
+let life = 5;
 
 const displayFoundBitcoins = document.getElementById("found");
 let foundBitcoins = 0;
@@ -26,7 +26,7 @@ const resetBtn = document.getElementById("reset");
 resetBtn.addEventListener("click", function () {
     console.log(walletValue);
     walletValue = 0;
-    life = 3;
+    life = 5;
     pickAxe.style.opacity = "1";
     foundBitcoins = 0;
     sellAllBtnValue = 0;

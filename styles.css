@@ -1,0 +1,101 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* Color */
+:root {
+    --bg-color: #16161a;
+    --secondary-bg-color: #2b2c34; 
+    --bitcoin-color: #f2a900;
+    --border-color: #2cb67d;
+    --text-color: #94a1b2;
+    --value-color: #7f5af0;
+}
+
+/* Style */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    border: var(--border-color) solid 2px;
+    box-shadow: var(--border-color) 0 0 40px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--border-color);
+}
+.fa-bitcoin{
+    color: var(--bitcoin-color);
+    font-size: 1.3rem;
+}
+#minecraft {
+    color: var(--border-color);
+    text-align: center;
+}
+.mining-container{
+    position: relative;
+}
+.mining-container img {
+    width: 100px;
+    margin: 10px 0 40px 0;
+}
+.pickaxe-img {
+    position: relative;
+    transform: rotate(-45deg);
+    z-index: 999;
+    overflow: visible;
+}
+.pickaxe-img:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+.mine {
+    transform: rotate(10deg);
+}
+.mine-img {
+    position: absolute;
+    bottom: -40px;
+    left: 30px;
+    overflow: hidden;
+}
+
+.dollar {
+    color: #7f5af0;
+}
+#wallet-value {
+    color: var(--value-color);
+}
+button {
+    width: 100%;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--bg-color);
+    background-color: var(--border-color);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: var(--bg-color);
+}

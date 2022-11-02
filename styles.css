@@ -99,3 +99,6 @@ button {
     border-radius: 5px;
     border-color: var(--bg-color);
 }
+button span {
+    color: var(--value-color);
+}

@@ -103,6 +103,7 @@ buyPickAxeBtn.addEventListener("click", function () {
         displayWallet.innerHTML = walletValue;
         life += 5;
         pickAxe.style.opacity = "1";
+        buyNewPickaxe.innerHTML = `Click on the <span id="minecraft">PICKAXE</span> to start mining</p>`;
         displayAllValues();
     } else {
         return 0;

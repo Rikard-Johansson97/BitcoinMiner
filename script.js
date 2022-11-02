@@ -100,7 +100,7 @@ buyPickAxeBtn.addEventListener("click", function () {
     if (walletValue >= dollar) {
         walletValue -= dollar;
         displayWallet.innerHTML = walletValue;
-        life += 3;
+        life += 5;
         pickAxe.style.opacity = "1";
         displayAllValues();
     } else {

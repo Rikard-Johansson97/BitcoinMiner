@@ -70,6 +70,7 @@ h1 {
 .pickaxe-img:hover {
     cursor: pointer;
     transition: ease-in-out 0.1s;
+    
 }
 .mine {
     transform: rotate(10deg);
